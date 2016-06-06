@@ -34,6 +34,19 @@ describe("Game", function() {
     expect(t).to.exist;
   });
 
+  describe('makePlay function', function(){
+    it('takes two player functions', function (){
+      var t = new Game(player1, player2);
+      console.log('*************', arguments);
+      //expect(arguments).to.be.arguments;
+    });
+
+    it('should record the outcome of the play', function (){
+      var t = new Game(player1, player2);
+
+    });
+
+  });
   //describe("with a game", function(){
     //var t;
 
