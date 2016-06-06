@@ -1,6 +1,7 @@
 const expect = require("chai").expect;
 var Game = require("../src/game.js");
-
+var player1 = require('../src/player1.js');
+var player2 = require('../src/player2.js');
 
 /*
  * notes for testing my game:
@@ -28,7 +29,7 @@ var Game = require("../src/game.js");
 
 describe("Game", function() {
   it("can be initialized", function() {
-    var t = new Game();
+    var t = new Game(player1, player2);
     console.log(t);
     expect(t).to.exist;
   });
