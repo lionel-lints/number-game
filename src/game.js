@@ -10,6 +10,14 @@ function Game ( player1, player2){
   this.play2 = player2();
 }
 
+Game.prototype.makePlay = function(player1Func, player2Func){
+  /* This function should accept and run both player functions
+  * and compute the outcome. Additionally, it should
+  * update the results of the player scores and the remaining picks. */
+};
+
+
+
 Game.prototype.learn = function(word, index){
   // This function should add the given word,
   // starting from the given index,
