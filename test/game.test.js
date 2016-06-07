@@ -2,7 +2,6 @@ const expect = require("chai").expect;
 var Game = require("../src/game.js");
 var player1 = require('../src/player1.js');
 var player2 = require('../src/player2.js');
-
 /*
  * notes for testing my game:
  * authentication of players:
@@ -34,13 +33,13 @@ describe("Game", function() {
 
     it('should record the outcome of the play', function (){
       var t = new Game(player1, player2);
-
+      expect(t.player1RemainingPicks).to.have.lengthOf(9);
+      expect(t.player2RemainingPicks).to.have.lengthOf(9);
     });
 
     it('should keep track of the score', function (){
       var t = new Game(player1, player2);
-    });
-
+    })
      it('should end when a player reaches 5 points', function (){
       var t = new Game(player1, player2);
     });

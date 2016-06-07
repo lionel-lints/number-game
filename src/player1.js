@@ -1,10 +1,11 @@
 'use strict'
 
-function Play (){
-  //if (playObj.player1Picks.length < 1) {
-    //return -1;
-  //}
-  return true;
+function play (object){
+  let index = Math.floor(Math.random() * (object.myArray.length));
+  function pick (index) {
+    return object.myArray[index];
+  };
+  return pick(index);
 }
 
-module.exports = Play
+module.exports = play;
