@@ -32,7 +32,8 @@ describe("Game", function() {
     });
 
     it('should record the outcome of the play', function (){
-      var t = new Game(player1, player2);
+      var t = new Game();
+      t.makePlay(player1, player2);
       expect(t.player1RemainingPicks).to.have.lengthOf(9);
       expect(t.player2RemainingPicks).to.have.lengthOf(9);
     });
