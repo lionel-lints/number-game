@@ -1,11 +1,8 @@
 'use strict'
 
+//function that randomly selects a number.
 function play (object){
-  let index = Math.floor(Math.random() * (object.myArray.length));
-  function pick (index) {
-    return object.myArray[index];
-  };
-  return pick(index);
+  return object.myArray[Math.floor(Math.random() * (object.myArray.length))];
 }
 
 module.exports = play;
