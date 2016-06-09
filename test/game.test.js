@@ -26,14 +26,18 @@ describe("Game", function() {
   describe('makePlay function', function(){
     it('takes two player functions', function (){
       var t = new Game();
-      t.makePlay(player1, player2);
+      t.makePlay();
+      console.log(t.player1Score, ' to ', t.player2Score);
+      t.makePlay();
+      console.log(t.player1Score, ' to ', t.player2Score);
+
       expect(typeof player1).to.equal('function');
       expect(typeof player2).to.equal('function');
     });
 
     it('should record the outcome of the play', function (){
       var t = new Game();
-      t.makePlay(player1, player2);
+      t.manyPlays();
       expect(t.player1RemainingPicks).to.have.lengthOf(9);
       expect(t.player2RemainingPicks).to.have.lengthOf(9);
     });
