@@ -1,13 +1,18 @@
 ## The LEGENDARY JavaScript number picking game
+
   This test suite and game runner are designed to let you build and save a number picking algorithm to outplay your cohort. It is designed to be fun and challenging. The algorithms that are built are piped into the game and are run against one another, the winner of each competition will be the player or team which wins the most games against the opposing team.
 
 ## The Rules
 
-1. The goal is to build a number picking algorithm that is the first to win 5 points.
-1. Players win 1 point by choosing a number that is lower than their opponents choice, by two or more.
-1. A player who picks a number which is one higher than their opponents choice wins 2 points.
-1. Players pick numbers from 1 to 10, but may only pick each number once.
-1. If both players pick the same number, no points are awarded, however that number may no longer be selected by either player.
+  1. The goal is to build a number picking algorithm that is the first to win 5 points.
+
+  1. A player who chooses a number that is lower than their opponents choice by two or more wins 1 point.
+
+  1. A player who picks a number which is one higher than their opponents choice wins 2 points.
+
+  1. Players pick numbers from 1 to 10, but may only pick each number once.
+
+  1. If both players pick the same number, no points are awarded, however that number may no longer be selected by either player.
 
 
   notes for testing my game:
